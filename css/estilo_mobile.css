@@ -35,9 +35,6 @@ body {
   --light-lavender: hsl(241, 100%, 89%);
   --light-lavender-opaco: hsl(241, 100%, 79%);
   --dark-gray-blue: hsl(224, 30%, 27%);
-
-  /* Outers */
-  --text-shadow: 1px 1px 6px #111a;
 }
 
 body {
@@ -68,7 +65,7 @@ h1, h2 {
 
 .level__title {
   padding: 23px 0;
-  text-shadow: var(--text-shadow);
+  text-shadow: 1px 1px 6px #111a;
   font-size: 0.99rem;
 }
 
