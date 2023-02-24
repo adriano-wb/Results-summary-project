@@ -159,7 +159,6 @@ h1,h2 {
 .summary__list__icon {
   height: 21px;
   width: 21px;
-  transform: scaleY(0.8);
   margin-right: 13px;
 }
 
