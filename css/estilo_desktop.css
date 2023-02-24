@@ -1,0 +1,66 @@
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 620px;
+}
+
+.result-status {
+  border-radius: 30px;
+  box-shadow: 1px 13px 15px #7773, 1px -2px 15px #7773;
+  flex-direction: row;
+}
+
+.level {
+  border-radius: 30px;
+  flex-basis: 50%;
+  height: auto;
+}
+
+.level__title {
+  padding-top: 30px;
+}
+
+.level__pontuation {
+
+  padding: 24px 45px;
+}
+
+/* "Great" text */
+.level > p:first-of-type {
+  padding-top: 40px;
+  padding-right: 3px;
+}
+
+/* text after "Great" text */
+.level > p:last-of-type {
+  padding: 0 40px;
+  padding-top: 15px;
+}
+
+.result-status .summary {
+  flex-basis: 50%;
+  padding-bottom: 23px;
+}
+
+.summary__list__item {
+  margin-bottom: 15px;
+}
+
+.summary__botao {
+  cursor: pointer;
+  padding: 13px;
+  font-size: 0.97rem;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.summary__botao:hover {
+  background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}

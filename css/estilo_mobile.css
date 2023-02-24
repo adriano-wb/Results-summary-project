@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  font: 18px 'Hanken Grotesk', sans-serif;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+body {
+  display: block;
+}
+
+:root {
+  /* primary colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* gradient colors */
+  --light-slate-blue: hsl(252, 100%, 67%); /* background gradient */
+  --light-royal-blue: hsl(241, 81%, 54%); /* background gradient */
+  --violet-blue: hsla(256, 72%, 46%, 1); /* circle gradient */
+  --persian-blue: hsla(241, 72%, 46%, 0); /* circle gradient */
+
+  /* neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --pare-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --light-lavender-opaco: hsl(241, 100%, 79%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Outers */
+  --text-shadow: 1px 1px 6px #111a;
+}
+
+body {
+  /* background: url(../design/mobile-design.jpg) 0 0 / 100% 100% no-repeat; */
+  height: 100vh;
+}
+
+h2 {
+  color: var(--light-lavender);
+  font-size: 1.07rem;
+}
+
+.result-status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.level {
+  background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+  height: 350px;
+  border-radius: 0 0 30px 30px;
+}
+
+.level__title {
+  padding: 23px 0;
+  text-shadow: var(--text-shadow);
+  font-size: 0.99rem;
+}
+
+/* Circulo com a pontuação */
+.level__pontuation {
+  background-image: linear-gradient(to bottom, var(--violet-blue) 35%, var(--persian-blue));
+  border-radius: 100%;
+  padding: 18px 38px;
+}
+
+.level__pontuation__paragraph strong {
+  display: block;
+  padding-top: 6px;
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 800;
+}
+
+.level__pontuation__paragraph small {
+  color: var(--light-lavender-opaco);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* "Great" text */
+.level > p:first-of-type {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-top: 25px;
+  padding-right: 3px;
+}
+
+.level > p:last-of-type {
+  color: var(--light-lavender);
+  padding: 0 55px;
+  padding-top: 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.01rem;
+}
+
+/* Sumário */
+.summary {
+  padding: 23px 28px;
+  padding-bottom: 5px;
+}
+
+.summary__title {
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+  font-size: 0.97rem;
+  padding-bottom: 30px;
+}
+
+.summary__list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.summary__list__item {
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+  font-size: 0.90rem;
+  font-weight: 500;
+}
+
+.summary__list__item:nth-child(1) {
+  background-color: #fff6f5;
+  color: var(--light-red);
+}
+
+.summary__list__item:nth-child(2) {
+  background-color: #fffbf2;
+  color: var(--orangey-yellow);
+}
+
+.summary__list__item:nth-child(3) {
+  background-color: #f2fbfa;
+  color: var(--green-teal);
+}
+
+.summary__list__item:nth-child(4) {
+  background-color: #f3f3fd;
+  color: var(--cobalt-blue);
+}
+
+.summary__list__icon {
+  height: 21px;
+  width: 21px;
+  transform: scaleY(0.8);
+  margin-right: 13px;
+}
+
+.summary__list__classification {
+  color: #999;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-left: auto;
+}
+
+.summary__list__classification__bolder {
+  color: var(--dark-gray-blue);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+/* Icone do raio ajuste */
+.summary__list__item:nth-child(1) .summary__list__icon {
+  transform: scale(1, 0.7);
+}
+
+/* Icone do cérebro ajuste */
+.summary__list__item:nth-child(2) .summary__list__icon {
+  transform: scale(0.8);
+}
+
+/* Icone do "comment" ajuste */
+.summary__list__item:nth-child(3) .summary__list__icon {
+  transform: scale(1, 0.9);
+}
+
+/* Icone do olho ajuste */
+.summary__list__item:nth-child(4) .summary__list__icon {
+  transform: scale(0.9, 1);
+}
+
+.summary__botao {
+  display: block;
+  background-color: var(--dark-gray-blue);
+  color: #FFF;
+  border-radius: 40px;
+  width: 100%;
+  text-align:center;
+  padding: 16px;
+}

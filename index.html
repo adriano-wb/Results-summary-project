@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="css/estilo_mobile.css">
+    <link rel="stylesheet" media="(max-width: 1440px) and (min-width: 375px)" href="css/estilo_desktop.css">
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        padding: 5px;
+      }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+    <script src="https://kit.fontawesome.com/f492772e4b.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="result-status">
+        <article class="level">
+          <h2 class="level__title">Your result</h2>
+          <div class="level__pontuation"> <!-- Pontuação e nota de avaliação -->
+            <p class="level__pontuation__paragraph"><strong id="result">76</strong><small>of 100</small></p>
+          </div>
+          <p>Great</p>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </article>
+        <article class="summary">
+          <h2 class="summary__title">Summary</h2>
+          <ul class="summary__list">
+            <li class="summary__list__item">
+              <img src="icons/thunder.png" class="summary__list__icon" alt="Icone do raio"> Reaction <span class="summary__list__classification"><b class="summary__list__classification__bolder">80</b> / 100</span>
+            </li>
+            <li class="summary__list__item">
+              <img src="icons/brain.png" class="summary__list__icon" alt="Icone do cérebro"> Memory <span class="summary__list__classification"><b class="summary__list__classification__bolder">92</b> / 100</span>
+            </li>
+            <li class="summary__list__item">
+              <img src="icons/chat.png" class="summary__list__icon" alt="Icone do chat"> Verbal <span class="summary__list__classification"><b class="summary__list__classification__bolder">61</b> / 100</span>
+            </li>
+            <li class="summary__list__item">
+              <img src="icons/view.png" class="summary__list__icon" alt="Icone do olho"> Visual <span class="summary__list__classification"><b class="summary__list__classification__bolder">72</b> / 100</span>
+            </li>
+          </ul>
+          <button type="button" class="summary__botao">Continue</button>
+        </article>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Adriano</a>.
+    </footer>
+  </body>
+</html>
