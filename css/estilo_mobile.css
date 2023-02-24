@@ -177,26 +177,6 @@ h1,h2 {
   margin-right: 5px;
 }
 
-/* Icone do raio ajuste */
-.summary__list__item:nth-child(1) .summary__list__icon {
-  transform: scale(1, 0.9);
-}
-
-/* Icone do cérebro ajuste */
-.summary__list__item:nth-child(2) .summary__list__icon {
-  transform: scale(0.9);
-}
-
-/* Icone do "comment" ajuste */
-.summary__list__item:nth-child(3) .summary__list__icon {
-  transform: scale(0.9);
-}
-
-/* Icone do olho ajuste */
-.summary__list__item:nth-child(4) .summary__list__icon {
-  transform: scale(1);
-}
-
 .summary__botao {
   display: block;
   background-color: var(--dark-gray-blue);
