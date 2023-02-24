@@ -13,7 +13,7 @@ body {
 
 .result-status {
   border-radius: 30px;
-  box-shadow: 1px 13px 15px #7773, 1px -2px 15px #7773;
+  box-shadow: 1px 13px 23px #AAA3, 1px -2px 23px #AAA3;
   flex-direction: row;
 }
 
