@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <title>Results summary component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="css/estilo_mobile.css">
     <link rel="stylesheet" media="(max-width: 1440px) and (min-width: 375px)" href="css/estilo_desktop.css">
     <style>
@@ -23,6 +23,8 @@
   <body>
     <main class="container">
       <div class="result-status">
+        
+        <!-- Mostrar nível -->
         <article class="level">
           <h1 class="level__title">Your result</h1>
           <div class="level__pontuation"> <!-- Pontuação e nota de avaliação -->
@@ -31,6 +33,8 @@
           <p>Great</p>
           <p>You scored higher than 65% of the people who have taken these tests.</p>
         </article>
+        
+        <!-- Sumário -->
         <article class="summary">
           <h2 class="summary__title">Summary</h2>
           <ul class="summary__list">
@@ -47,7 +51,7 @@
               <img src="assets/images/icon-visual.svg" class="summary__list__icon" alt="Icone do olho"> Visual <span class="summary__list__classification"><b class="summary__list__classification__bolder">72</b> / 100</span>
             </li>
           </ul>
-          <button type="button" class="summary__botao">Continue</button>
+          <button type="button" class="summary__botao" aria-label="Botão para prosseguir">Continue</button>
         </article>
       </div>
     </main>
